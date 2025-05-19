@@ -34,9 +34,10 @@ if (*KdDebuggerNotPresent)
 
 Installation procedure can be found on the page of the original author but really come down to :   
 
+- Replace the original kdcom.dll in system32 by this version
 - Add a boot entry in debug mode : bcdedit.exe /debug {entry} on  
 - Activate testsigning : bcdedit /set {entry} testsigning on  
-- specify the debug mode : bcdedit /set {entry} dbgtransport kdcom.dll and bcdedit /set {entry} debugtype serial  
+- Specify the debug mode : bcdedit /set {entry} dbgtransport kdcom.dll and bcdedit /set {entry} debugtype serial  
 - For convenience change the boot menu layout : bcdedit /set {default} bootmenupolicy legacy  
 
    
