@@ -32,13 +32,13 @@ if (*KdDebuggerNotPresent)
 ```
 -  changed the ReturnStatus in "KdReceivePacket" from DBG_CONTINUE to DBG_EXCEPTION_HANDLED  
 
-Installation procedure can be found on the page of the original author but really come down to :   
+Installation procedure can be found on the page of the original author but really comes down to :   
 
-- Replace the original kdcom.dll in system32 by this version
-- Add a boot entry in debug mode : bcdedit.exe /debug {entry} on  
-- Activate testsigning : bcdedit /set {entry} testsigning on  
-- Specify the debug mode : bcdedit /set {entry} dbgtransport kdcom.dll and bcdedit /set {entry} debugtype serial  
-- For convenience change the boot menu layout : bcdedit /set {default} bootmenupolicy legacy  
+- Replacing the original kdcom.dll in system32 by this version
+- Adding a boot entry in debug mode : bcdedit.exe /debug {entry} on  
+- Activating testsigning : bcdedit /set {entry} testsigning on  
+- Specifying the debug mode : bcdedit /set {entry} dbgtransport kdcom.dll and bcdedit /set {entry} debugtype serial  
+- For convenience changing the boot menu layout : bcdedit /set {default} bootmenupolicy legacy  
 
    
 
