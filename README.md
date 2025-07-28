@@ -39,7 +39,10 @@ Installation procedure can be found on the page of the original author but reall
 - Adding a boot entry in debug mode : bcdedit.exe /debug {entry} on  
 - Activating testsigning : bcdedit /set {entry} testsigning on  
 - Specifying the debug mode : bcdedit /set {entry} dbgtransport kdcom.dll and bcdedit /set {entry} debugtype serial  
-- For convenience changing the boot menu layout : bcdedit /set {default} bootmenupolicy legacy  
+- For convenience changing the boot menu layout : bcdedit /set {default} bootmenupolicy legacy
+- At boot select the new boot entry, press F8 and select "Disable Driver Signature Enforcment"  
+
+  
 
    
 
