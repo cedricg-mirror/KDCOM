@@ -34,6 +34,7 @@ if (*KdDebuggerNotPresent)
 
 Installation procedure can be found on the page of the original author but really comes down to :   
 
+- Disabling Secure Boot
 - Replacing the original kdcom.dll in system32 by this version
 - Adding a boot entry in debug mode : bcdedit.exe /debug {entry} on  
 - Activating testsigning : bcdedit /set {entry} testsigning on  
